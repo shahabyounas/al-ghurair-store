@@ -1,8 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Al Ghurair الغرير`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `Shahab Younas`,
+    menuLinks:[
+            {
+               name:'Our Company',
+               link:'/'
+            },
+            {
+               name:'Our Sectors',
+               link:'/secotrs'
+            },
+            {
+              name: 'Media Center',
+              link: '/media'
+            },{
+              name:'Careers',
+              link: '/careers'
+            },
+          ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
