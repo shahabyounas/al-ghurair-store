@@ -10,18 +10,19 @@ module.exports = {
             },
             {
                name:'Our Sectors',
-               link:'/secotrs'
+               link:'#'
             },
             {
               name: 'Media Center',
-              link: '/media'
+              link: '#'
             },{
               name:'Careers',
-              link: '/careers'
+              link: '#'
             },
           ]
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

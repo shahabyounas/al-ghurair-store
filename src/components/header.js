@@ -13,12 +13,12 @@ const Header = ({ menuLinks, siteTitle }) => (
       style={{
         display: "flex",
         flex: 1,
-        margin: `0 auto`,
+        margin: `0 0`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h3 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -28,8 +28,10 @@ const Header = ({ menuLinks, siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
-      <div>
+      </h3>
+      <div style={{
+         padding: `0 4.0875rem`
+      }}>
         <nav>
           <ul style={{display: "flex" , flex: 1}}>
             {menuLinks.map(link => (
@@ -37,7 +39,7 @@ const Header = ({ menuLinks, siteTitle }) => (
                 listStyleType: 'none',
                 padding: '1rem'
               }}>
-                <Link style={{color: `white`}} to={link.link}>{link.name} </Link>
+                <Link style={{color: `white` , textDecoration: 'none'}} to={link.link}>{link.name} </Link>
               </li>
             ))}
           </ul>
