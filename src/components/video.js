@@ -1,11 +1,8 @@
 import React, { useState } from "react"
-// import PropTypes from "prop-types"
-// import { Helmet } from "react-helmet"
-// import { useStaticQuery, graphql } from "gatsby"
 import video from "../images/test-home-video.mp4"
-import "./video.css"
 import thumb from "../images/test-image.jpg"
 import thumb2 from "../images/test2-image.jpg"
+import "./video.css"
 
 function VideoEx() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false)
